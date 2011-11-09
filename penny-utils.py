@@ -31,7 +31,8 @@ def make_dates_dict(fish_d):
 def get_fishes_by_date(fish_d, date):
   fishlist = []
   fishlist = fish_d[date]
-  return fishlist
+  setfishlist = set(fishlist)
+  return setfishlist
 
 def get_dates_by_fish(dates_d, fish):
   totallist = []
